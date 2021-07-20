@@ -1,0 +1,84 @@
+body {
+	background-color: rgb(255,199,15);
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	width: 300px;
+}
+
+.content {
+	text-align: center;
+	padding: 5px 30px;
+}
+
+h1 {
+	margin-top: 3px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: dodgerblue;
+}
+
+h1 a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+#currentAlbumCover {
+	position: relative;
+	min-height: 100px;
+}
+
+.controls {
+	display: flex;
+	justify-content: space-evenly;
+
+	margin: 10px 0;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 60px;
+	height: 60px;
+	background-color: rgba(255,199,15, 0.7);
+	font-size: 2.5em;
+
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.icon.small {
+	font-size: 0.8em;
+}
+
+#currentAlbumCoverImage {
+	width: 100%;
+}
+
+#currentSong {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#currentArtist {
+	font-size: 1.3em;
+}
+
+#volumeSliderWrapper {
+	margin: 20px 0 30px;
+}

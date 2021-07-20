@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Test</title>
+	<link href="../lib/css/fontawesome.css" type="text/css" rel="stylesheet" />
+	<link href="../lib/css/rangeslider.css" type="text/css" rel="stylesheet" />
+	<link href="popup.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div id="wrapper">
+		<div class="content">
+			<h2>Are you listening?</h2>
+			<h1><a href="https://centralcoastradio.com" target="_blank">Central Coast Radio</a></h1>
+		</div>
+
+		<div id="currentAlbumCover">
+			<img id="currentAlbumCoverImage" alt="Album Cover" />
+			<div class="controls">
+				<div class="icon" id="pause-btn" style="display: none;">
+					<i class="fas fa-pause"></i>
+				</div>
+				<div class="icon" id="play-btn">
+					<i class="fas fa-play"></i>
+				</div>
+				<div class="icon small" id="loading-spinner" style="display: none;">
+					<i class="fas fa-spinner fa-spin fa-3x"></i>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<p id="currentInfo" style="display: none;">
+				<span id="currentSong"></span><br />
+				<span id="currentArtist"></span>
+			</p>
+			<label style="display: none;" for="volumeSlider">Volume</label>
+			<div id="volumeSliderWrapper">
+				<input type="range" id="volumeSlider" min="0" max="100" step="1" value="50" />
+			</div>
+		</div>
+	</div>
+	<script src="../lib/js/jquery.js"></script>
+	<script src="../lib/js/rangeslider.js"></script>
+	<script src="popup.js"></script>
+</body>
+</html>
